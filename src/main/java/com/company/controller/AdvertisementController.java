@@ -19,7 +19,7 @@ public class AdvertisementController {
 		this.advertisementService = advertisementService;
 	}
 
-	@GetMapping(value = "/advertisement", produces = MediaType.APPLICATION_JSON_VALUE)
+	@GetMapping(value = "/advertisementStore", produces = MediaType.APPLICATION_JSON_VALUE)
 	public CompletableFuture<Advertisement> advertisement() {
 		return this.advertisementService.getAdvertisement();
 	}
